@@ -1,0 +1,92 @@
+:root {
+  --color-background: #f5f5f9;
+  --color-scrollbar: rgb(224, 224, 224);
+  --color-scrollbar-hover: #bbb;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+  background: var(--color-background);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-scrollbar);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+  background: var(--color-background);
+  border-radius: 10px;
+}
+
+body {
+  /* background-color: var(--color-background); */
+  background-color: '#fff';
+}
+
+@font-face {
+  font-family: "Baloo";
+  src: url("/fonts/baloo-regular.woff2");
+}
+
+@font-face {
+  font-family: "BalooTamma";
+  src: url("/fonts/baloo-tamma.woff2");
+}
+
+@-webkit-keyframes click_animation {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0.3;
+  }
+
+  to {
+    -webkit-transform: scale(5);
+    transform: scale(5);
+    opacity: 0;
+  }
+}
+
+@keyframes click_animation {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0.3;
+  }
+
+  to {
+    -webkit-transform: scale(5);
+    transform: scale(5);
+    opacity: 0;
+  }
+}
+
+.main-background {
+  background-image: url(./navbar-and-hero-background.png);
+}
+
+.gradientBackground {
+  background-image: linear-gradient(#F9F0E7, white, white, #F9F0E7);
+}
+
+.gradientBackground2 {
+  background-image: linear-gradient(#F9F0E7, white, white);
+}
+
+.subscribebtn {
+  font-size: 18px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #F9F0E7;
+  color: #127C71;
+  font-family: Balootamma;
+}
